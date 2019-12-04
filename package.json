@@ -1,0 +1,28 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js",
+    "cov": "nyc --all mocha **/*.test.js",
+    "gencov": "nyc --all --reporter=lcov --reporter=text-summary  --report-dir=ut-coverage mocha **/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "jszip": "^3.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "expect": "^24.8.0",
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "rewire": "^4.0.1",
+    "uglify-es": "^3.3.9"
+  }
+}
